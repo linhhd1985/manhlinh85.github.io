@@ -1,0 +1,88 @@
+
+	
+.thumbnail_sanpham{	
+padding:0 0 15px 0;
+margin-left: 20px;
+margin-top: 20px;
+
+}
+.sanpham_ct{
+	border: 1px solid whitesmoke;
+    box-sizing: border-box;	
+	width:150px;
+	margin-left: 30px;
+}
+.thumbnail_sanpham  img{
+                width: 40%;
+                height: 100%;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+.content11_sanpham img{
+    float:left;
+}
+.content11_lienquan{
+    margin-bottom: 60px;
+}
+.noidung_sanpham{
+	height:auto;
+}
+
+.tabsanpham{
+    margin-left: 300px;
+}
+
+
+@media screen and (max-width: 320px){
+    #home{
+        margin-left:80px;
+    }
+    #menu1{
+        margin-left:80px;
+    }
+    #menu2{
+        margin-left:80px;
+    }
+    #home .content11
+    {
+        margin-left: 20px;
+        width: 100px;
+        height: 100px;
+        margin-bottom:80px;
+        float: left;
+    }
+    #menu1 .content11
+    {
+        margin-left: 13px;
+        width: 100px;
+        height: 100px;
+        margin-bottom:80px;
+        float: left;
+    }
+    #menu2 .content11
+    {
+        margin-left: 13px;
+        width: 100px;
+        height: 100px;
+        margin-bottom:80px;
+        float: left;
+    }
+    body {
+        width: 85%;
+        margin-left: 30px;}
+    .thumbnail_sanpham  img{
+        width: 50%;
+        height: 50%;
+        margin-bottom: 10px;
+        margin-left: 50px;
+    }
+    .banner_gioithieu img {
+        margin-left: 0px;
+    }
+}
+
+
+
+
+
+

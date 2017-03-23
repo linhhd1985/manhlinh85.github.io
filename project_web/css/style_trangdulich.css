@@ -1,0 +1,29 @@
+.thumbnail_tt_dulich{
+    margin-top: 12px;
+    margin-bottom: 20px;
+    margin-left: -14px;
+}
+.thongtinchitiet{
+    margin-top: 8px;
+}
+.thumbnail_tt_dulich img{
+    width: 100%;
+
+    margin-top: -10px;
+}
+.thongtin_dulich{
+    background-color: whitesmoke;
+    height: 100px;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 320px){
+    .thongtin_dulich{
+        height: 250px;
+    }
+    .thongtinchitiet{
+        margin-top: 2px;
+        margin-left: 26px;
+    }
+}

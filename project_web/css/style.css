@@ -1,0 +1,506 @@
+@font-face {
+  font-family: "alexbrush";
+  src: url("../fonts/alexbrush-regular.eot?") format("eot"),
+  url("../fonts/alexbrush-regular.woff") format("woff"),
+  url("../fonts/alexbrush-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "inconsolata";
+  src: url("../fonts/inconsolata-regular.eot?") format("eot"),
+  url("../fonts/inconsolata-regular.woff") format("woff"),
+  url("../fonts/inconsolata-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "playfairdisplay";
+  src: url("../fonts/playfairdisplay-regular.eot?") format("eot"),
+  url("../fonts/playfairdisplay-regular.woff") format("woff"),
+  url("../fonts/playfairdisplay-regular.ttf") format("truetype");
+   font-weight: normal;
+  font-style: normal;
+}
+div #banner{
+    font-family: 'inconsolata';
+	margin-top: 10px;
+    margin-left: 244px;
+}
+
+body{
+	font-family: 'playfairdisplay';
+	font-size: 14px;
+	color: #080808;
+}
+.span2{
+    color: #f94a13;
+}
+.span3{
+    color: #f94a13;
+}
+#myNavbar ul li a:hover{
+    background-color: black;
+}
+
+.quangcao2{
+    background-color: #f94a13;
+    height: auto;
+    border-radius: 10px;
+  margin-top: 1px;
+}
+.quangcao3{
+    margin-top: 20px;
+    background-color: #f94a13;
+    height: auto;
+    border-radius: 10px;
+}
+.quangcao1{
+  background-color: #f94a13;
+  height: auto;
+    border-radius: 10px;
+}
+/*CSS phần banner*/
+#timkiem{
+    margin-top: -18px;
+    margin-bottom: 6px;
+}
+
+.banner_gioithieu{
+	margin-top:20px;
+}
+.banner11{
+	margin-left:60px;
+}
+/*CSS phần menu chính*/
+.navbar-inverse{
+                background-color: red;
+
+            }
+.navbar-inverse li a{
+	color:white;
+    padding-top:15px;
+}		
+/*CSS phần Carousel*/
+	 .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  .noidung{
+     box-sizing: border-box;
+	 margin-top:40px;
+				
+   }
+
+/*CSS phần Carousel*/
+/*CSS cho phần nội dung và sản phẩm*/
+.noidung1{
+	margin-top:20px;
+}
+#myNavbar1 li a{
+    margin-top: 3px
+}
+  #myNavbar2{
+	  margin-top:3px;
+	  background-color:red;
+      border-radius: 10px;
+  }
+  #myNavbar2 {
+      list-style-type: square;
+      color: white;
+  }
+  #myNavbar2 >li>a{
+	  color:white;
+  }
+
+ #myNavbar2 li{
+	    margin-bottom: 0px;
+    padding-bottom: 10px;
+    padding-top: 14px;
+ }
+#myNavbar22{
+    margin-top:3px;
+    background-color:red;
+    border-radius: 10px;
+    width: 276px;
+    margin-left: 11px;
+    list-style-type: square;
+    color: white;
+}
+#myNavbar22 li a{
+    color:white;
+    text-decoration: none;
+}
+#myNavbar22 li{
+    padding-top:10px;
+    padding-bottom: 15px;
+}
+  /*Css cho phần footer*/
+  .lib_img img{
+	float:left;
+	margin-left:10px;
+	margin-top:20px;
+	}
+	.thumbnail11 img{
+				width:20%;
+				height:25%;
+	}
+.anh_small_dulich img{
+    margin-left:15px;
+    margin-top:10px;
+
+}
+.thumbnail_small_dulich img{
+    width:80%;
+    height:80%;
+
+}
+.thumbnail_small_dulich{
+    margin-left: 30px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+}
+.dulich{
+    margin-left: -48px;
+}
+.dulich1{
+    margin-left: 4px;
+    text-indent: 20px;
+    margin-top: -23px;
+}
+.diadiem{
+    color: #f94a13;
+}
+    .footer{
+        background-color: whitesmoke;
+    }
+    /*CSS cho thẻ hr*/
+hr{
+    color: red;
+    background: red;
+    border: 0;
+    height: 1px;
+}
+/** CSS cho phần video*/		
+.video{
+	margin-top:50px;
+    margin-left: -50px;
+}
+
+	#home{
+		margin-left:-12px;
+	}
+	#menu1{
+		margin-left:-12px;
+	}
+	#menu2{
+		margin-left:-12px;
+	}
+		 #home .content11
+	 {
+       margin-left: 21px;
+		width: 150px; 
+        height: 150px;
+		margin-bottom:80px;
+		float: left;	
+         }
+#menu1 .content11
+	 {
+       margin-left: 15px;
+		width: 150px; 
+        height: 150px;
+		margin-bottom:80px;
+		float: left;	
+         }
+ #menu2 .content11
+	 {
+       margin-left: 15px;
+		width: 150px; 
+        height: 150px;
+		margin-bottom:80px;
+		float: left;	
+         }
+	.thumbnail>img{
+		width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+	}	
+
+    .thumbnail6 .anh6 img{
+        margin-top: 10px;
+    }
+/*CSS cho bài viết*/
+
+.baiviet0{
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    margin-top: 30px;
+}
+
+. border_content{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.baiviet1 {
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.baiviet0{
+    border-radius: 10px;
+}
+
+.thumbnail7 .anh7 img{
+    margin-top: 0px;
+}
+.thumbnail7 {
+   background-color: whitesmoke;
+    border-radius: 10px;
+
+}
+.thumbnail9{
+  margin-left: -14px;
+margin-top: 20px;
+background-color: whitesmoke;
+    border-radius: 10px;
+}
+.thumbnail10{
+  margin-left: -14px;
+margin-top: 20px;
+background-color: whitesmoke;
+    border-radius: 10px;
+}
+.thumbnail111{
+  margin-left: -14px;
+margin-top: 20px;
+background-color: whitesmoke;
+    border-radius: 10px;
+}
+.thumbnail12{
+    margin-left: -14px;
+    margin-top: 20px;
+background-color: whitesmoke;
+    border-radius: 10px;
+}
+.tieude6{
+    margin-top: 10px;
+}
+.tieude7{
+	margin-top:20px;
+}
+
+.thumbnail_small img{
+	width:70%;
+	height:70%;
+}
+
+.tieude6_small{
+	margin-left:-50px;
+}
+
+
+.myNav2{
+	margin-left:-27px;
+
+}
+.myNav2 li a{
+	text-decoration:none;
+}
+.danhmuc{
+    color:blue;
+}
+/****** LOGIN MODAL ******/
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+.login-help{
+  font-size: 12px;
+}
+/*CSS cho hiệu ứng hiện ra từ từ*/
+	.slideanim{
+				visibility:hidden;
+			}
+			.slide1{
+				animation-name:slide1;
+				-webkit-animation-name:slide1;
+				animation-duration:1s;
+				-webkit-animation-duration:1s;
+				visibility: visible;
+			}
+			@keyframes slide1{
+				0% {
+					opacity:0;
+					transform: translateX(70%);
+				}
+				100%{
+					opacity:1;
+					transform: translateX(0%);
+				}
+			}
+			@-webkit-keyframes slide1{
+				0% {
+					opacity:0;
+					-webkit-transform: translateX(70%);
+				}
+				100%{
+					opacity:1;
+					-webkit-transform: translateX(0%);
+				}
+			}
+					
+/*CSS cho nut Share facebook*/
+.Share{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.share_content{
+    width: 100px;
+}
+.FanPage{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.calendar{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px){
+
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px){
+
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 480px){
+
+}
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 320px){
+    body {
+        width: 85%;
+        margin-left: 30px;
+    }
+
+    .banner img {
+        margin-left: 80px;
+    }
+
+    .banner_gioithieu1 img {
+        margin-left: 60px;
+    }
+
+    .banner_gioithieu img {
+        margin-left: 0px;
+    }
+
+    .banner_gioithieu1 {
+        display: none;
+    }
+
+    .btn_search {
+        margin-left: 92px;
+        margin-top: 5px;
+    }
+
+    .navbar-inverse {
+        background-color: red;
+        width: 129%;
+        margin-left: -42px;
+    }
+
+}
+/*Smart phone nhỏ*/
+@media screen and (max-width: 240px){
+
+}
+			
+			

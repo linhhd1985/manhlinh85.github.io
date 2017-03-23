@@ -1,0 +1,55 @@
+
+.thumbnail_gt{
+
+margin-left: 20px;
+margin-top: 20px;
+}
+.thumbnail_gt .anh6{
+width:100%;
+    margin-top: 20px;
+}
+.thumbnail_gt .anh6 img{
+
+    margin-top: -20px;
+}
+.gioithieu{
+	margin-top:4px;
+}
+#myNavbar_gioithieu{
+    margin-top: -4px;
+}
+.tieude1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tieude2{
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.baiviet1{
+    margin-bottom: 20px;
+    margin-left: 27px;
+}
+#myNavbar_gioithieu{
+    margin-top:70px;
+    background-color:red;
+    border-radius: 10px;
+}
+#myNavbar_gioithieu li a{
+    color:white;
+    text-decoration: none;
+}
+#myNavbar_gioithieu li{
+     padding-top:10px;
+     padding-bottom: 15px;
+ }
+.FanPage_gioithieu{
+    margin-left: 15px;
+}
+@media screen and (max-width: 320px ){
+    body {
+        width:82%;
+        margin-left: 30px;
+    }
+}

@@ -1,0 +1,44 @@
+.thumbnail_chitiet{
+    width:250px;
+    height:250px;
+    background-color: whitesmoke;
+
+}
+.content_chitiet{
+    width:250px;
+    height:250px;
+
+}
+.share{
+    float:left;
+}
+.like{
+    margin-left: 79px;
+}
+
+.thumbnail_spcungloai img{
+    width: 70%;
+    height: 70%;
+    margin-left: 30px;
+}
+.thumbnail_spcungloai{
+    box-sizing: border-box;
+    border: 1px solid whitesmoke;
+    margin-top: 30px;
+}
+.FanPage_sanpham{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.noidung_chitiet{
+    margin-top: 20px;
+}
+.comment{
+    margin-top: 18px;
+}
+.crs{
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}

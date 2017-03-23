@@ -1,0 +1,23 @@
+.lienhe{
+	    margin-left: 218px;
+		margin-top:60px;
+		width:500px;
+		height:500px;
+		padding-top: 30px;
+		border-radius:10px;
+}
+
+@media screen and (max-width: 320px ){
+	body {
+		width: 85%;
+		margin-left: 30px;}
+	.lienhe{
+		margin-left: -20px;
+	}
+}
+
+
+
+
+
+
